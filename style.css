@@ -15,7 +15,7 @@ body {
   }
   
   .logo {
-    width: 100px;
+    width: 500px;
     margin-bottom: 1rem;
   }
   
@@ -43,7 +43,7 @@ body {
   }
   
   footer {
-    background: #e0e0e0;
+    background: #3d21f6b4;
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
@@ -55,5 +55,39 @@ body {
   }
   a:hover {
     text-decoration: underline;
+  }
+  .container {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .header {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 200px;
+    text-align: center;
+  }
+
+  .card h3 {
+    margin: 10px 0 5px;
+  }
+
+  .card p {
+    color: #555;
+    font-size: 0.95rem;
   }
   
