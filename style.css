@@ -97,4 +97,45 @@ body {
     color: #555;
     font-size: 0.95rem;
   }
+/* ОБЩАЯ сетка — десктоп и планшет */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* АДАПТИВ: телефоны до 600px */
+@media (max-width: 600px) {
+  .header {
+    padding: 30px 10px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr; /* одна колонка */
+    gap: 20px;
+  }
+
+  .card {
+    padding: 15px;
+    border-radius: 16px;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}
+
   
