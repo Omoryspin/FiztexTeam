@@ -1,153 +1,145 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to bottom right, #f0f4f8, #e0ecf1);
-  color: #333;
-  line-height: 1.6;
-}
-
-/* Шапка сайта */
-header, .header {
-  background: #00264d;
-  color: white;
-  text-align: center;
-  padding: 4rem 1rem 3rem;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-
-.logo {
-  width: 200px;
-  margin-bottom: 1rem;
-}
-
-.tagline {
-  font-size: 1.2rem;
-  color: #e0e0e0;
-}
-
-/* Общий контейнер */
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-}
-
-/* Сетка карточек */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 40px;
-  margin-bottom: 80px;
-}
-
-/* Карточки */
-.card {
-  background-color: white;
-  padding: 25px;
-  border-radius: 24px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  text-align: center;
-  transform: translateY(10px);
-  opacity: 0;
-  animation: fadeInUp 0.6s ease forwards;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(0);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
-}
-
-.card img {
-  width: 100%;
-  border-radius: 16px;
-  margin-bottom: 15px;
-}
-
-.card h3 {
-  margin: 10px 0 5px;
-  font-size: 1.2rem;
-  color: #111;
-}
-
-.card p {
-  color: #555;
-  font-size: 1rem;
-}
-
-/* Анимация */
-@keyframes fadeInUp {
-  to {
-    transform: translateY(0);
-    opacity: 1;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('background.jpg'); /* путь к изображению */
+    background-size: cover;       /* растягивает изображение на весь экран */
+    background-position: center;  /* центрирует */
+    background-repeat: no-repeat; /* не повторяет */
+    background: linear-gradient(to bottom right, #f0f4f8, #e0ecf1);
+    margin: 0;
   }
-}
+  
+  header {
+    background: #00264d;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .logo {
+    width: 500px;
+    margin-bottom: 1rem;
+  }
+  
+  .tagline {
+    font-size: 1.1rem;
+  }
+  
+  section {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  h2 {
+    color: #004080;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    padding: 0.5rem 0;
+  }
+  
+  footer {
+    background: #959c9fe1;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .container {
+    max-width: 10000px;
+    margin: auto;
+  }
 
-/* Секции */
-section {
-  padding: 2rem 1rem;
-  max-width: 800px;
-  margin: auto;
-}
+  .header {
+    text-align: center;
+    padding: 100px;
+  }
 
-/* Заголовки */
-h2 {
-  color: #004080;
-}
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 300px;
+    justify-content: center;
+    margin-bottom: 60px; /* ← вот эта строка добавит пространство перед футером */
+  }
 
-/* Списки */
-ul {
-  list-style: none;
-  padding: 0;
-}
-ul li {
-  padding: 0.5rem 0;
-}
+  .card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 48px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 410px;
+    height: 410px;
+    text-align: center;
+    transform: translateY(10px);
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+  }
 
-/* Ссылки */
-a {
-  color: #0070f3;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-a:hover {
-  text-decoration: underline;
-  color: #0051aa;
-}
+  .card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.90rem;
+  }
 
-/* Футер */
-footer {
-  background: #dbe1e5;
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
-  color: #555;
-}
+  .card p {
+    color: #555;
+    font-size: 0.85rem;
+  }
+  .profile-img {
+   width: 250px;
+   height: 250px; /* высота ограничена */
+   object-fit: cover; /* 🔥 главный фокус */
+   border-radius: 12px;
+  }
+  
+  /* ОБЩАЯ сетка — десктоп и планшет */
+/*.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 450px;
+  justify-content: center;
+} */
 
-/* 📱 Адаптив */
+/* АДАПТИВ: телефоны до 600px */
 @media (max-width: 600px) {
   .header {
-    padding: 2rem 1rem;
+    padding: 30px 10px;
   }
 
   .logo {
-    width: 140px;
+    width: 150px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr; /* одна колонка */
+    gap: 20px;
   }
 
   .card {
     padding: 15px;
     border-radius: 16px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
   }
-  .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 16px 32px rgba(0,0,0,0.15);
-} 
 
   .card h3 {
     font-size: 1rem;
@@ -159,6 +151,13 @@ footer {
 
   footer {
     font-size: 0.8rem;
-    padding: 1rem;
+    padding: 10px;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
