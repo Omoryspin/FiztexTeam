@@ -110,6 +110,8 @@ body {
    height: 200px; /* высота ограничена */
    object-fit: cover; /* 🔥 главный фокус */
    border-radius: 12px;
+   user-select: none;
+   pointer-events: none;
   }
   
   /* ОБЩАЯ сетка — десктоп и планшет */

@@ -1,0 +1,157 @@
+
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #f0f4f8, #e0ecf1);
+  color: #333;
+  line-height: 1.6;
+}
+
+header, .header {
+  background: #00264d;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  text-align: center;
+  transform: translateY(10px);
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.02);
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.card p {
+  color: #555;
+  font-size: 1rem;
+}
+
+@keyframes fadeInUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  color: #004080;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  padding: 0.5rem 0;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #0051aa;
+}
+
+footer {
+  background: #dbe1e5;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 2rem 1rem;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  .card {
+    padding: 15px;
+    border-radius: 16px;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+}

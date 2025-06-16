@@ -12,6 +12,11 @@ body {
     background: linear-gradient(to bottom right, #f0f4f8, #e0ecf1);
     margin: 0;
   }
+
+  .no-yandex {
+   user-select: none;
+   pointer-events: none;
+  }
   
   header {
     background: #00264d;
@@ -79,7 +84,7 @@ body {
   .team-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 300px;
+    gap: 180px;
     justify-content: center;
     margin-bottom: 60px; /* ← вот эта строка добавит пространство перед футером */
   }
@@ -89,8 +94,8 @@ body {
     padding: 30px;
     border-radius: 48px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    width: 410px;
-    height: 410px;
+    width: 500px;
+    height: 500px;
     text-align: center;
     transform: translateY(10px);
     opacity: 0;
@@ -104,13 +109,27 @@ body {
 
   .card p {
     color: #555;
-    font-size: 0.85rem;
+    font-size: 1 rem;
   }
+  .custom-font 
+  {
+   font-family: 'Georgia', serif;
+  } 
   .profile-img {
    width: 250px;
    height: 250px; /* высота ограничена */
    object-fit: cover; /* 🔥 главный фокус */
    border-radius: 12px;
+   user-select: none;
+   pointer-events: none;
+  }
+  .profile-img2 {
+   width: 250px;
+   height: 100px; /* высота ограничена */
+   object-fit: scale-down; /* 🔥 главный фокус */
+   border-radius: 12px;
+   user-select: none;
+   pointer-events: none;
   }
   
   /* ОБЩАЯ сетка — десктоп и планшет */
