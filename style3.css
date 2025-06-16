@@ -89,8 +89,8 @@ body {
     padding: 30px;
     border-radius: 48px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    width: 410px;
-    height: 410px;
+    width: 1000px;
+    height: 500px;
     text-align: center;
     transform: translateY(10px);
     opacity: 0;
@@ -99,21 +99,49 @@ body {
 
   .card h3 {
     margin: 10px 0 5px;
-    font-size: 1.30rem;
+    font-size: 1.60rem;
   }
 
   .card p {
     color: #555;
     font-size: 0.85rem;
-  }
+  }/*
   .profile-img {
    width: 250px;
-   height: 250px; /* высота ограничена */
-   object-fit: cover; /* 🔥 главный фокус */
+   height: 250px; 
+   object-fit: cover; 
    border-radius: 12px;
    user-select: none;
    pointer-events: none;
-  }
+  }*/
+  .project-img {
+  width: 300px;
+  height: 400px;
+  border-radius: 16px;
+  object-fit: cover;
+  user-select: none;
+   pointer-events: none;
+}
+.project-text h3 {
+  margin-top: 0;
+  color: #004080;
+}
+  .card.horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  padding: 30px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 40px auto;
+  justify-content: flex-start;
+
+  align-items: flex-start;
+}
   
   /* ОБЩАЯ сетка — десктоп и планшет */
 /*.team-grid {
@@ -124,36 +152,19 @@ body {
 } */
 
 /* АДАПТИВ: телефоны до 600px */
-@media (max-width: 600px) {
-  .header {
-    padding: 30px 10px;
+@media (max-width: 768px) {
+  .card.horizontal {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .logo {
-    width: 150px;
+  .project-img {
+    width: 100%;
+    margin-bottom: 20px;
   }
 
-  .team-grid {
-    grid-template-columns: 1fr; /* одна колонка */
-    gap: 20px;
-  }
-
-  .card {
-    padding: 15px;
-    border-radius: 16px;
-  }
-
-  .card h3 {
-    font-size: 1rem;
-  }
-
-  .card p {
-    font-size: 0.9rem;
-  }
-
-  footer {
-    font-size: 0.8rem;
-    padding: 10px;
+  .project-text {
+    width: 100%;
   }
 }
 

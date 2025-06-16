@@ -27,6 +27,8 @@ body {
   .logo {
     width: 500px;
     margin-bottom: 1rem;
+    user-select: none;
+   pointer-events: none;
   }
   
   .tagline {
@@ -85,18 +87,24 @@ body {
   }
 
   .card {
-    background-color: white;
-    padding: 30px;
-    border-radius: 48px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    width: 400px;
-    height: 200px;
-    text-align: center;
-    transform: translateY(10px);
-    opacity: 0;
-    animation: fadeInUp 0.6s ease forwards;
-  }
+  background-color: white;
+  padding: 30px;
+  border-radius: 48px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 400px;
+  height: 200px;
 
+  /* 🧭 Центрирование всего содержимого */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  transform: translateY(10px);
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
   .card h3 {
     margin: 10px 0 5px;
   }
