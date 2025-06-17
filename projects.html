@@ -13,7 +13,8 @@
     <div class="logo">
       <img src="logo.png" alt="Логотип" />
     </div>
-    <nav class="nav-menu">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav class="nav-menu" id="navMenu">
       <a href="https://omoryspin.github.io/FiztexTeam/index.html">Главная страница</a>
       <a href="https://omoryspin.github.io/FiztexTeam/team.html">Участники</a>
       <a href="https://omoryspin.github.io/FiztexTeam/projects.html">Проекты</a>
@@ -62,5 +63,10 @@
     <p>Следите за нами в Instagram: <a href="https://www.instagram.com/fiztex_fll_challenge_?igsh=MTZ3bzFob211dzVvaw==" target="_blank">@fiztex.kz</a></p>
     <p>© FizTex, 2025</p>
   </footer>
+  <script>
+  function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+  }
+</script>
 </body>
 </html>
