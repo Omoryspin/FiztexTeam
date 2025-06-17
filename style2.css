@@ -17,7 +17,27 @@ body {
    user-select: none;
    pointer-events: none;
   }
-  
+
+  .arlen-font {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.baur-font {
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #222;
+}
+.katya-font {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #1a1a1a;
+}
+
+
   .main-header {
   background: white;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -178,6 +198,9 @@ body {
   {
    font-family: cursive;
   } 
+  .comic {
+  font-family: "Comic Sans MS", cursive;
+}
   .profile-img {
    width: 250px;
    height: 250px; /* высота ограничена */
@@ -202,7 +225,6 @@ body {
    user-select: none;
    pointer-events: none;
   }
-  
   /* ОБЩАЯ сетка — десктоп и планшет */
 /*.team-grid {
   display: grid;

@@ -183,6 +183,9 @@ body {
 .project-text h3 {
   margin-top: 0;
   color: #004080;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
   .card.horizontal {
   display: flex;
