@@ -210,32 +210,61 @@ body {
 } */
 
 /* АДАПТИВ: телефоны до 600px */
-@media (max-width: 768px) {
-  .card.horizontal {
+@media (max-width: 600px) {
+  .header {
+    padding: 30px 10px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;  
+    gap: 20px;
+  }
+
+  .card {
+    padding: 15px;
+    border-radius: 16px;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+
+  .header-content {
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    gap: 10px;
   }
 
-  .project-img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  .project-text {
-    width: 100%;
-    font-size: 0.95rem;
-    text-align: justify;
-  }
-
-  .project-text h3 {
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
     text-align: center;
   }
 
-  .project-text p {
-    font-size: 0.9rem;
-    line-height: 1.6;
+  .icons {
+    justify-content: center;
+  }
+
+  .main-header {
+    overflow-x: hidden; /* на всякий случай */
+  }
+
+  body {
+    overflow-x: hidden; /* предотвратит вылазку */
   }
 }
 
