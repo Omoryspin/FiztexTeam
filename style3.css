@@ -210,7 +210,7 @@ body {
 } */
 
 /* АДАПТИВ: телефоны до 600px */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .header {
     padding: 30px 10px;
   }
@@ -265,6 +265,32 @@ body {
 
   body {
     overflow-x: hidden; /* предотвратит вылазку */
+  }
+  .card.horizontal {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .project-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .project-text {
+    width: 100%;
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+
+  .project-text h3 {
+    text-align: center;
+  }
+
+  .project-text p {
+    font-size: 0.9rem;
+    line-height: 1.6;
   }
 }
 
