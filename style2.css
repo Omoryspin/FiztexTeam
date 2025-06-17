@@ -18,6 +18,63 @@ body {
    pointer-events: none;
   }
   
+  .main-header {
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 10px 0;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 40px;
+  user-select: none;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1rem;
+  position: relative;
+}
+
+.nav-menu a:hover {
+  color: #d40000;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icons img {
+  width: 20px;
+  height: 20px;
+  filter: grayscale(1);
+  transition: 0.3s;
+}
+
+.icons img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
   header {
     background: #00264d;
     color: white;
@@ -113,7 +170,13 @@ body {
   }
   .custom-font 
   {
+    margin: 10px 0 5px;
+    font-size: 0.90rem;
    font-family: 'Georgia', serif;
+  }
+  .custom-fontt
+  {
+   font-family: cursive;
   } 
   .profile-img {
    width: 250px;
@@ -123,10 +186,18 @@ body {
    user-select: none;
    pointer-events: none;
   }
-  .profile-img2 {
+  .profile-img1 {
    width: 250px;
    height: 100px; /* высота ограничена */
    object-fit: scale-down; /* 🔥 главный фокус */
+   border-radius: 12px;
+   user-select: none;
+   pointer-events: none;
+  }
+  .profile-img2 {
+   width: 250px;
+   height: 100px; /* высота ограничена */
+   object-fit: fill; /* 🔥 главный фокус */
    border-radius: 12px;
    user-select: none;
    pointer-events: none;
