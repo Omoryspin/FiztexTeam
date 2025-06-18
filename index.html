@@ -6,55 +6,82 @@
   <title>FizTex!</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+
+  <style>
+    /* Анимации */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .animated {
+      opacity: 0;
+      animation: fadeIn 0.3s ease forwards;
+    }
+
+    .delay-1 { animation-delay: 0.3s; }
+    .delay-2 { animation-delay: 0.6s; }
+    .delay-3 { animation-delay: 0.9s; }
+    .delay-4 { animation-delay: 1.2s; }
+  </style>
 </head>
 <body>
 
-  <header class="main-header">
-  <div class="header-content">
-    <div class="logo">
-      <a href="https://omoryspin.github.io/FiztexTeam/index.html">
-       <img src="img/logo2.jpg" alt="Логотип" />
-      </a>
+  <header class="main-header animated delay-1">
+    <div class="header-content">
+      <div class="logo">
+        <a href="https://omoryspin.github.io/FiztexTeam/index.html">
+          <img src="img/logo2.jpg" alt="Логотип" />
+        </a>
+      </div>
+      <nav class="nav-menu">
+        <a href="https://omoryspin.github.io/FiztexTeam/index.html">Главная страница</a>
+        <a href="https://omoryspin.github.io/FiztexTeam/team.html">Участники</a>
+        <a href="https://omoryspin.github.io/FiztexTeam/projects.html">Проект</a>
+        <a href="https://avatars.mds.yandex.net/i?id=61edbbb87d38dcef9853e13c8b6baa65d2b42f95-5630042-images-thumbs&n=13">Ментор Команды</a>
+      </nav>
+      <div class="icons">
+        <a href="https://www.instagram.com/fiztex_fll_challenge_?igsh=MTZ3bzFob211dzVvaw=="><img src="img/1s.svg" alt="Инстаграм" /></a>
+        <a href="https://t.me/fiztex_team"><img src="img/2s.svg" alt="Телеграм" /></a>
+        <a href="https://www.tiktok.com/@fiztex.team?_t=ZM-8xIwivXrdYO&_r=1"><img src="img/3s.svg" alt="ТикТок" /></a>
+      </div>
     </div>
-    <nav class="nav-menu">
-      <a href="https://omoryspin.github.io/FiztexTeam/index.html">Главная страница</a>
-      <a href="https://omoryspin.github.io/FiztexTeam/team.html">Участники</a>
-      <a href="https://omoryspin.github.io/FiztexTeam/projects.html">Проект</a>
-      <a href="https://avatars.mds.yandex.net/i?id=61edbbb87d38dcef9853e13c8b6baa65d2b42f95-5630042-images-thumbs&n=13">Ментор Команды</a>
-    </nav>
-    <div class="icons">
-      <a href="https://www.instagram.com/fiztex_fll_challenge_?igsh=MTZ3bzFob211dzVvaw=="><img src="img/1s.svg" alt="Инстаграм" /></a>
-      <a href="https://t.me/fiztex_team"><img src="img/2s.svg" alt="Телеграм" /></a>
-      <a href="https://www.tiktok.com/@fiztex.team?_t=ZM-8xIwivXrdYO&_r=1"><img src="img/3s.svg" alt="ТикТок" /></a>
-    </div>
-  </div>
-</header>
+  </header>
 
   <div class="container">
-    <div class="header">
+    <div class="header animated delay-2">
       <img src="img/logo.png" alt="FizTex Logo" class="logo" />
       <h1>Команда FizTex</h1>
       <p class="tagline">Сильная и дружная команда робототехники</p>
     </div>
 
-    <div class="team-grid">
+    <div class="team-grid animated delay-3">
       <a href="projects.html" class="card-link">
-       <div class="card">
-         <h3>Наш проект</h3>
-         <p>Посмотреть наш инновационный проект.</p>
-       </div>
+        <div class="card">
+          <h3>Наш проект</h3>
+          <p>Посмотреть наш инновационный проект.</p>
+        </div>
       </a>
       <a href="team.html" class="card-link">
-       <div class="card">
-         <h3>Участники</h3>
-         <p>Познакомьтесь с нашей командой!</p>
-       </div>
+        <div class="card">
+          <h3>Участники</h3>
+          <p>Познакомьтесь с нашей командой!</p>
+        </div>
       </a>
     </div>
   </div>
-  <footer>
-    <p>Следите за нами в Instagram: <a href="https://www.instagram.com/fiztex_fll_challenge_?igsh=MTZ3bzFob211dzVvaw==" target="_blank">@fiztex.kz</a></p>
+
+  <footer class="animated delay-4">
+    <p>Следите за нами в Instagram: 
+      <a href="https://www.instagram.com/fiztex_fll_challenge_?igsh=MTZ3bzFob211dzVvaw==" target="_blank">@fiztex.kz</a>
+    </p>
     <p>© FizTex, 2025</p>
   </footer>
+
 </body>
 </html>
