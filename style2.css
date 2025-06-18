@@ -272,6 +272,21 @@ body {
 } */
 
 /* АДАПТИВ: телефоны до 600px */
+
+.logo-header img {
+  height: 120px;
+  user-select: none;
+  transform: translateX(-275px) translateY(10px);
+}
+
+/* ✅ ЛОГОТИП НА ГЛАВНОЙ */
+.logo-center {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  user-select: none;
+  pointer-events: none;
+}
 @media (max-width: 600px) {
   .logo img {
     transform: none !important;
@@ -335,6 +350,15 @@ body {
 
   body {
     overflow-x: hidden; /* предотвратит вылазку */
+  }
+  .logo-header img {
+    transform: none !important;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .logo-center {
+    width: 130px;
   }
 }
 

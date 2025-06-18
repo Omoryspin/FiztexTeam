@@ -306,6 +306,21 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 💡 добавляем тень */
 }
 
+.logo-header img {
+  height: 120px;
+  user-select: none;
+  transform: translateX(-275px) translateY(10px);
+}
+
+/* ✅ ЛОГОТИП НА ГЛАВНОЙ */
+.logo-center {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  user-select: none;
+  pointer-events: none;
+}
+
 @media (max-width: 768px) {
   .logo img {
     transform: none !important;
@@ -417,6 +432,15 @@ body {
   .project-text p {
     font-size: 0.9rem;
     line-height: 1.6;
+  }
+  .logo-header img {
+    transform: none !important;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .logo-center {
+    width: 130px;
   }
 }
 
