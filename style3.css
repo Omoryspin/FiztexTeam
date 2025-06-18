@@ -306,7 +306,7 @@ body {
 
 @media (max-width: 768px) {
   .logo img {
-    transform: translateX(0);
+    transform: translateX(-275px) translateY(10px);
   }
   .hamburger {
     display: block;
