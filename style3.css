@@ -305,8 +305,16 @@ body {
 }
 
 @media (max-width: 768px) {
+  .logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
   .logo img {
-    transform: translateX(-275px) translateY(10px);
+    transform: none;
+    display: block;
+    margin: 0 auto;
+    height: 100px; /* можно уменьшить немного на телефонах */
   }
   .hamburger {
     display: block;
