@@ -12,7 +12,9 @@
   <header class="main-header">
   <div class="header-content">
     <div class="logo">
+      <a href="https://omoryspin.github.io/FiztexTeam/index.html">
       <img src="logo.png" alt="Логотип" />
+      </a>
     </div>
     <div class="hamburger" onclick="toggleMenu()">☰</div>
     <nav class="nav-menu" id="navMenu">
@@ -39,12 +41,14 @@
     </div>
   </a>
 </div>
+<div class="pages">
 
+  <div class="page" id="page-1">
     <div class="card horizontal">
-  <img src="pj1.jpg" alt="Проект 1" class="project-img"/>
-  <div class="project-text">
-    <h3>Проект по спасению кораллов</h3>
-    <p>
+     <img src="pj1.jpg" alt="Проект 1" class="project-img"/>
+      <div class="project-text">
+       <h3>Проект по спасению кораллов</h3>
+       <p>
       <!-- твой текст тут -->
       В современном мире остро стоит проблема массового вымирания кораллов, вызванного ухудшением качества морской воды. По данным ООН, к 2050 году могут исчезнуть до 90% коралловых рифов. Это окажет серьёзное негативное влияние на всю экосистему океана, поскольку кораллы играют ключевую роль: они обеспечивают среду обитания для множества морских организмов, защищают побережья от штормов и способствуют очищению воды.
 
@@ -59,10 +63,39 @@
 Корпус устройства выполнен из биоразлагаемого пластика, не наносящего вреда окружающей среде. Для повышения автономности проекта мы также планируем установить солнечные панели над поверхностью воды.
 
 Таким образом, наш проект представляет собой устойчивое, технологичное и экологически безопасное решение, способное внести вклад в сохранение коралловых рифов и восстановление морской экосистемы. Мы верим, что использование подобных технологий позволит предотвратить глобальные экологические последствия и сохранить океан для будущих поколений.
-    </p>
+       </p>
+      </div>
+     </div>
   </div>
+
+  <div class="page" id="page-2" style="display:none;">
+    <!-- Контент второй страницы -->
+    <div class="card horizontal">
+      <img src="pj2.jpg" alt="Проект 2" class="project-img"/>
+      <div class="project-text">
+        <h3>Другой проект</h3>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-3" style="display:none;">
+    <!-- Контент третьей страницы -->
+    <div class="card horizontal">
+      <img src="pj3.jpg" alt="Проект 3" class="project-img"/>
+      <div class="project-text">
+        <h3>Третий проект</h3>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+
 </div>
-  </div>
+<div class="pagination">
+  <span onclick="showPage(1)">1</span>
+  <span onclick="showPage(2)">2</span>
+  <span onclick="showPage(3)">3</span>
+</div>
 
   <footer>
     <p>Следите за нами в Instagram: <a href="https://www.instagram.com/fiztex_fll_challenge_?igsh=MTZ3bzFob211dzVvaw==" target="_blank">@fiztex.kz</a></p>
@@ -72,6 +105,17 @@
   function toggleMenu() {
     document.getElementById("navMenu").classList.toggle("active");
   }
+</script>
+<script>
+  function showPage(pageNumber) {
+    const pages = document.querySelectorAll('.page');
+    pages.forEach((page, index) => {
+      page.style.display = (index + 1 === pageNumber) ? 'block' : 'none';
+    });
+  }
+
+  // Показать первую страницу по умолчанию при загрузке
+  window.onload = () => showPage(1);
 </script>
 </body>
 </html>

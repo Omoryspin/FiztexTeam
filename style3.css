@@ -32,9 +32,9 @@ body {
 }
 
 .logo img {
-  height: 100px;
+  height: 120px;
   user-select: none;
-  transform: translateX(-200px);
+  transform: translateX(-275px) translateY(10px);
 }
 
 .nav-menu {
@@ -255,6 +255,49 @@ body {
 .small {
   font-size: 0.5;
 }
+.pagination {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pagination button {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin: 0 12px; /* расстояние между кнопками */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #d40000;
+  color: white;
+  transform: scale(1.15); /* увеличение */
+}
+
+.pagination span {
+  display: inline-block;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin: 0 12px; /* расстояние между цифрами */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  user-select: none; /* чтобы не выделялись при клике */
+}
+
+.pagination span:hover {
+  background-color: #ffffffc3;
+  color: rgb(0, 0, 0);
+  transform: scale(1.15);
+}
+
 @media (max-width: 768px) {
   .logo img {
     transform: translateX(0);

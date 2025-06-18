@@ -94,17 +94,22 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  
 }
 
 .logo img {
-  height: 100px;
+  height: 120px;
   user-select: none;
-  transform: translateX(-200px);
+  transform: translateX(-275px) translateY(10px);
 }
 
 .nav-menu {
   display: flex;
   gap: 30px;
+  justify-content: center; /* ⬅ центрирует ссылки внутри блока */
+  flex: 1; /* ⬅ позволяет .nav-menu занять всё доступное пространство */
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .nav-menu a {
@@ -204,6 +209,7 @@ body {
   gap: 450px;
   justify-content: center;
 } */
+ 
 
 @media (max-width: 600px) {
   .logo img {
