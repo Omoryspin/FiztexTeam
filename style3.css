@@ -82,9 +82,11 @@ body {
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   }
   
-  .logo {
+   .logo {
     width: 500px;
     margin-bottom: 1rem;
+    user-select: none;
+   pointer-events: none;
   }
   
   .tagline {
@@ -306,9 +308,19 @@ body {
 
 @media (max-width: 768px) {
   .logo img {
-    transform: none;
+    transform: none !important;
     margin: 0 auto;
     display: block;
+  }
+
+  .header {
+    padding: 30px 10px;
+  }
+
+  .logo {
+    width: 150px;
+    margin: 0 auto;
+    display: inline-block;
   }
   .hamburger {
     display: block;
@@ -333,14 +345,6 @@ body {
   .nav-menu.active {
     display: flex;
   }
-  .header {
-    padding: 30px 10px;
-  }
-
-  .logo {
-    width: 150px;
-  }
-
   .team-grid {
     grid-template-columns: 1fr;  
     gap: 20px;
