@@ -367,6 +367,20 @@ body {
   .logo-center {
     width: 130px;
   }
+  .baur-font {
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.45rem !important;
+    line-height: 1.4;
+    color: #222;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+    border-radius: 16px;
+    max-width: 400px;
+  }
 }
 
 @keyframes fadeInUp {
